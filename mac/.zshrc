@@ -100,3 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gcc-full='time gcc -Wall -Wextra -Werror'
+alias gst='git status'
+alias francinette=/Users/dborione/francinette/tester.sh
+alias paco=/Users/dborione/francinette/tester.sh
