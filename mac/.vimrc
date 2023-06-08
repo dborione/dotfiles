@@ -1,4 +1,6 @@
 call plug#begin()
+Plug 'townk/vim-autoclose'
+Plug 'itmammoth/doorboy.vim'
 Plug 'sainnhe/everforest'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
