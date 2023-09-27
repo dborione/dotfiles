@@ -112,11 +112,11 @@ alias gcc-full='time gcc -Wall -Wextra -Werror'
 alias gst='git status'
 alias francinette=/Users/dborione/francinette/tester.sh
 alias paco=/Users/dborione/francinette/tester.sh
-
+alias clap="ssh dona@clappycrew.com -p 2016"
 alias cclean='bash ~/Cleaner_42.sh'
+
 defaults write -g InitialKeyRepeat -int 12
 defaults write -g KeyRepeat -int 2
-export PATH=$HOME/.brew/bin:$PATH
 export PATH=$HOME/.brew/bin:$PATH
 
 #RPROMPT='%(?..%{$fg[red]%}-%{$reset_color%}%{$fg_bold[red]%}%?%{$reset_color%}%{$fg[red]%}-%{$reset_color%}'
@@ -139,3 +139,4 @@ RPROMPT='$(check_last_exit_code)'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
