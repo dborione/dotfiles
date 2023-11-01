@@ -114,6 +114,7 @@ alias francinette=/Users/dborione/francinette/tester.sh
 alias paco=/Users/dborione/francinette/tester.sh
 alias clap="ssh dona@clappycrew.com -p 2016"
 alias cclean='bash ~/Cleaner_42.sh'
+alias toggl='~/Library/Python/3.8/bin/toggl'
 
 defaults write -g InitialKeyRepeat -int 12
 defaults write -g KeyRepeat -int 2
@@ -140,3 +141,10 @@ RPROMPT='$(check_last_exit_code)'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#compdef toggl
+_toggl() {
+  eval $(env COMMANDLINE="${words[1,$CURRENT]}" _TOGGL_COMPLETE=complete-zsh  toggl)
+}
+if [[ "$(basename -- ${(%):-%x})" != "_toggl" ]]; then
+  compdef _toggl toggl
+fi
