@@ -115,6 +115,7 @@ alias paco=/Users/dborione/francinette/tester.sh
 alias clap="ssh dona@clappycrew.com -p 2016"
 alias cclean='bash ~/Cleaner_42.sh'
 alias toggl='~/Library/Python/3.8/bin/toggl'
+alias vimdef='vim -u NONE -U NONE -N -i NONE'
 
 defaults write -g InitialKeyRepeat -int 12
 defaults write -g KeyRepeat -int 2
