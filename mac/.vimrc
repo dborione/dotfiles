@@ -5,6 +5,7 @@ Plug 'sainnhe/everforest'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 if has('termguicolors')
@@ -33,3 +34,8 @@ let &t_ZR="\e[31m"
 ":syntax enable
 :set mouse=a
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+highlight LineNr ctermfg=darkgrey
+
+"goyo minimal mod: :Goyo
+"disble: !Goyo
+"Width: Goyo 100
