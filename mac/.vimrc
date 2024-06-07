@@ -35,7 +35,9 @@ let &t_ZR="\e[31m"
 :set mouse=a
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 highlight LineNr ctermfg=darkgrey
+highlight Comment ctermfg=darkgrey
 
 "goyo minimal mod: :Goyo
 "disble: !Goyo
-"Width: Goyo 100
+"width: Goyo 100
+"height: Goyo 100x50
